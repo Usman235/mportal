@@ -53,9 +53,18 @@
     <Compile Include="Entity\Customer.cs" />
     <Compile Include="Configuration\EntityBaseConfiguration.cs" />
     <Compile Include="Entity\IEntity.cs" />
+    <Compile Include="Entity\Order.cs" />
     <Compile Include="Migrations\201611121859349_Init.cs" />
     <Compile Include="Migrations\201611121859349_Init.Designer.cs">
       <DependentUpon>201611121859349_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611131631556_Demo table order.cs" />
+    <Compile Include="Migrations\201611131631556_Demo table order.Designer.cs">
+      <DependentUpon>201611131631556_Demo table order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611131635265_Demo table order1.cs" />
+    <Compile Include="Migrations\201611131635265_Demo table order1.Designer.cs">
+      <DependentUpon>201611131635265_Demo table order1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MPortalContext.cs" />
@@ -70,6 +79,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611121859349_Init.resx">
       <DependentUpon>201611121859349_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611131631556_Demo table order.resx">
+      <DependentUpon>201611131631556_Demo table order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611131635265_Demo table order1.resx">
+      <DependentUpon>201611131635265_Demo table order1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

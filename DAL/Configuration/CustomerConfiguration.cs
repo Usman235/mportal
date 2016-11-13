@@ -19,5 +19,18 @@ namespace DAL.Configuration
             //Property(u => u.DateCreated);
         }
     }
+
+    public class OrderConfiguration : EntityBaseConfiguration<Order>
+    {
+        public OrderConfiguration()
+        {
+            Property(u => u.Demo).IsRequired().HasMaxLength(100);
+            //Property(u => u.Email).IsRequired().HasMaxLength(200);
+            //Property(u => u.HashedPassword).IsRequired().HasMaxLength(200);
+            //Property(u => u.Salt).IsRequired().HasMaxLength(200);
+            //Property(u => u.IsLocked).IsRequired();
+            //Property(u => u.DateCreated);
+        }
+    }
     
 }

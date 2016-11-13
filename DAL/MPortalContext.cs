@@ -17,7 +17,8 @@ namespace DAL
             Database.SetInitializer<MPortalContext>(null);
         }
         #region Entity Sets
-        public IDbSet<Customer> UserSet { get; set; }
+        public IDbSet<Customer> CustomerSet { get; set; }
+        public IDbSet<Order> OrderSet { get; set; }
        //ublic IDbSet<Role> RoleSet { get; set; }
        //ublic IDbSet<UserRole> UserRoleSet { get; set; }
        //ublic IDbSet<Customer> CustomerSet { get; set; }
@@ -38,6 +39,7 @@ namespace DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Configurations.Add(new CustomerConfiguration());
+            modelBuilder.Configurations.Add(new OrderConfiguration());
             //modelBuilder.Configurations.Add(new UserRoleConfiguration());
             //modelBuilder.Configurations.Add(new RoleConfiguration());
             //modelBuilder.Configurations.Add(new CustomerConfiguration());
