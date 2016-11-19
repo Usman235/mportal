@@ -1,14 +1,11 @@
-﻿{
+{
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.1",
-      "type": "platform"
-    },
+    "DAL": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
-    
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
     "Microsoft.Extensions.Logging.Console": "1.0.0"
+
   },
 
   "tools": {
@@ -16,9 +13,10 @@
   },
 
   "frameworks": {
-    "netcoreapp1.0": {
+    "net4.6.1": {
       "imports": [
         "dotnet5.6",
+        "net452",
         "portable-net45+win8"
       ]
     }
