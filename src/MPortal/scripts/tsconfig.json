@@ -9,8 +9,7 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "moduleResolution": "node",
-    "suppressImplicitAnyIndexErrors": true
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules",

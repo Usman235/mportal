@@ -11,14 +11,14 @@
     <script src="libs/reflect-metadata/Reflect.js"></script>
     <script src="libs/systemjs/dist/system.src.js"></script>
     <script src="libs/angular/angular.js"></script>
-
+    
     <!-- 2. Configure SystemJS -->
+    <script src="appScripts/app.js"></script>
     <script src="systemjs.config.js"></script>
     <!--App Scripts-->
-  <script src="appScripts/main.js"></script> 
-    <!--<script src="appScripts/main.js"></script>-->
-    <!--<script src="../scripts/boot.js"></script>-->
-    <!--<script src="../scripts/boot.js"></script>-->
+
+ 
+    
     <script>
         System.import('appScripts/boot')
               .then(null, console.error.bind(console));
